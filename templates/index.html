@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallurgy AI | Universal Command Center</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3OiVMUPo1N79inichJ2ajZmX9J3fmoQY"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div id="sidebar">
+            <button id="toggleSidebar" class="mini-toggle">◀</button>
+            
+            <h2>METALLURGY AI</h2>
+            <p style="color: #666; font-size: 0.8rem; margin-bottom: 20px;">Multi-Metal Sustainability Auditor</p>
+            
+            <div class="input-section">
+                <div class="input-box">
+                    <label>Site Name</label>
+                    <input id="name" placeholder="e.g., Barro Alto">
+                </div>
+                
+                <div class="input-box">
+                    <label>Metal / Material Type</label>
+                    <input list="op-types" id="type" placeholder="e.g. Lithium, Gold, Zinc">
+                    <datalist id="op-types">
+                        <option value="Gold">
+                        <option value="Lithium">
+                        <option value="Iron">
+                        <option value="Steel">
+                        <option value="Coal">
+                        <option value="Copper">
+                        <option value="Uranium">
+                        <option value="Nickel">
+                    </datalist>
+                </div>
+                
+                <div class="input-box"><label>Production (Tons)</label><input type="number" id="prod" value="1000"></div>
+                <div class="input-box"><label>Energy (kWh)</label><input type="number" id="energy" value="45000"></div>
+                <div class="input-box"><label>Water (Liters)</label><input type="number" id="water" value="90000"></div>
+                <div class="input-box"><label>Ore Purity (%)</label><input type="number" id="purity" value="62"></div>
+            </div>
+
+            <button id="auditBtn" onclick="runAudit()">⚡ RUN SYSTEM AUDIT</button>
+
+            <div id="solution-box">
+                <div id="status-header"></div>
+                <div id="sol-list"></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="map"></div>
+            <div class="horizontal-stats" id="stats-dashboard">
+                <div class="stat-card"><span class="stat-label">CO2 Footprint</span><span class="stat-value" id="val-co2">--</span></div>
+                <div class="stat-card"><span class="stat-label">Circularity</span><span class="stat-value" id="val-circ">--</span></div>
+                <div class="stat-card"><span class="stat-label">Eco-Status</span><span class="stat-value" id="val-status">--</span></div>
+                <div class="stat-card"><span class="stat-label">Impact Score</span><span class="stat-value" id="val-score">--</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

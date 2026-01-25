@@ -1,0 +1,95 @@
+site_name,type,production,energy,water,purity, ,country,impact_score,zone_status
+Barro Alto,Copper,41550,476582,37943343,28,,Brazil,563.28,Red
+Barro Alto,Zinc,39964,1435333,8729103,13,,Brazil,171.68,Red
+Bloom Lake,Coal,34704,1252843,10324600,80,,Canada,176.26,Red
+Bloom Lake,Zinc,45041,276734,34575976,90,,Canada,386.9,Red
+Bloom Lake,Copper,3875,748636,43659439,13,,Canada,6988.12,Red
+Carosue Dam,Steel,13471,1211798,32799058,55,,Australia,554.43,Red
+Carosue Dam,Coal,20049,1276173,29503112,24,,Australia,1122.7,Red
+Central Murchison Gold Project,Steel,8230,275144,46043596,96,,Australia,1143.99,Red
+Central Murchison Gold Project,Zinc,49563,1431657,467508,32,,Australia,25.86,Green
+Codemin,Iron,9637,664797,24040242,48,,Brazil,789.76,Red
+Codemin,Zinc,37488,937770,24366957,61,,Brazil,337.5,Red
+Darlot,Iron,43433,1682091,37228967,36,,Australia,378.52,Red
+Darlot,Aluminum,45841,631397,2154148,51,,Australia,30.38,Green
+Deflector,Gold,8685,1686716,4322531,69,,Australia,557.78,Red
+Deflector,Iron,19879,1574914,24034163,94,,Australia,410.24,Red
+DeGrussa,Gold,38281,1776152,34228244,54,,Australia,714.68,Red
+DeGrussa,Zinc,38920,102269,11795865,44,,Australia,152.85,Red
+DeGrussa,Zinc,24742,151374,27993529,21,,Australia,767.84,Red
+Duketon,Zinc,19531,591167,10324018,51,,Australia,279.43,Red
+Duketon,Nickel,33284,599810,29872005,43,,Australia,457.75,Red
+Edikan,Coal,14074,384164,18518368,28,,Ghana,989.87,Red
+Edikan,Gold,42682,1449184,373498,78,,Ghana,38.82,Orange
+Edna May,Copper,32180,1857403,23709889,49,,Australia,363.3,Red
+Edna May,Coal,27264,327230,17617556,45,,Australia,359.6,Red
+El Soldado,Aluminum,31677,418182,7403646,75,,Chile,123.46,Red
+El Soldado,Nickel,33155,1597899,21821615,36,,Chile,476.8,Red
+Extension Hill/Iron Hill,Iron,26750,708526,41337947,67,,Australia,479.5,Red
+Extension Hill/Iron Hill,Gold,1117,1432508,25491058,66,,Australia,18334.09,Red
+Extension Hill/Iron Hill,Zinc,2325,1182894,1489616,39,,Australia,775.89,Red
+Fortescue Pilbara Region,Aluminum,33262,823720,44969336,54,,Australia,688.37,Red
+Fortescue Pilbara Region,Nickel,44446,108262,9025522,11,,Australia,138.71,Red
+Fortnum Gold Operations,Aluminum,11222,88687,34171893,93,,Australia,1526.49,Red
+Fortnum Gold Operations,Iron,7386,1133842,45573949,24,,Australia,2623.32,Red
+Halls Creek,Nickel,24132,1964305,7764515,75,,Australia,201.58,Red
+Halls Creek,Nickel,47643,760630,5520593,31,,Australia,88.99,Red
+Iron Valley,Gold,33035,1300444,602335,28,,Australia,68.95,Red
+Iron Valley,Coal,9307,360007,43264645,11,,Australia,3469.87,Red
+Jundee,Copper,1758,1393651,11919784,36,,Australia,4707.65,Red
+Jundee,Steel,24386,151389,3298315,45,,Australia,317.1,Green
+Karouni,Iron,5458,911245,34070341,44,,Guyana,1972.86,Red
+Karouni,Steel,40230,771083,10196247,70,,Guyana,65.06,Orange
+KMAruda,Steel,37047,1763117,2689812,25,,Russia,67.79,Orange
+Kolomela,Aluminum,15711,1484178,1986272,59,,South Africa,110.45,Red
+Kolomela,Zinc,35446,1325331,21168547,86,,South Africa,317.3,Red
+Koolan Island,Copper,24509,1830513,31323430,20,,Australia,831.86,Red
+Koolan Island,Coal,5698,908798,25634187,63,,Australia,2530.17,Red
+Koolan Island,Iron,8322,500492,25128023,84,,Australia,941.93,Red
+Koolyanobbing,Zinc,31746,1224001,16625529,78,,Australia,281.13,Red
+Koolyanobbing,Gold,4182,1612698,35717817,28,,Australia,9142.17,Red
+Korshunov,Coal,48878,822533,20181521,26,,Russia,314.53,Red
+Korshunov,Aluminum,2781,359348,30696999,26,,Russia,7537.95,Red
+Korshunov,Coal,14037,375869,13545564,75,,Russia,540.12,Red
+Leonora,Zinc,28993,125485,977658,59,,Australia,19.02,Green
+Leonora,Aluminum,35516,1874019,23398331,31,,Australia,480.31,Red
+Los Bronces,Coal,10938,624699,30563631,12,,Chile,2101.72,Red
+Los Bronces,Steel,30207,429315,40584753,22,,Chile,377.15,Red
+Maly Kuybas,Iron,2452,1132557,33903229,87,,Russia,4425.16,Red
+Maly Kuybas,Nickel,7224,282928,29450097,11,,Russia,2778.21,Red
+Martabe,Aluminum,5743,1992320,25296915,79,,Indonesia,2375.87,Red
+Martabe,Iron,29577,356047,4706362,59,,Indonesia,54.96,Orange
+Mount Marion,Steel,40824,124356,28506107,13,,Australia,191.62,Red
+Mount Monger,Coal,30174,503858,15054231,69,,Australia,280.25,Red
+Mount Monger,Nickel,4637,817118,6203033,67,,Australia,756.97,Red
+Mt Magnet,Nickel,27790,1386968,11232114,19,,Australia,306.51,Red
+Mt Magnet,Nickel,7975,186350,4792861,20,,Australia,421.44,Red
+Northern Star Kalgoorlie Operations,Steel,49402,1834041,14872560,84,,Australia,88.05,Orange
+Northern Star Kalgoorlie Operations,Steel,48994,558771,43570621,94,,Australia,186.41,Red
+Pogo,Steel,3599,1336740,47235563,13,,USA,3919.71,Red
+Pogo,Zinc,5878,333117,24506747,35,,USA,2852.49,Red
+Renison,Aluminum,14484,1644031,157091,37,,Australia,83.94,Red
+Renison,Iron,42314,634731,49922104,89,,Australia,362.94,Red
+Simberi,Gold,42052,901661,15260008,73,,PNG,292.53,Red
+Simberi,Steel,47176,1493992,2281246,68,,PNG,33.42,Green
+Sishen,Aluminum,14146,633102,49810596,88,,South Africa,1782.97,Red
+Sishen,Iron,26215,1607908,9966460,11,,South Africa,203.66,Red
+Sissingue,Gold,8049,1901781,29501412,70,,Cote d'Ivoire,2973.38,Red
+Sissingue,Nickel,28915,190369,33577805,53,,Cote d'Ivoire,583.92,Red
+Thalanga,Copper,40509,70726,1926287,94,,Australia,22.36,Green
+Thalanga,Zinc,15964,839439,42864627,35,,Australia,1847.92,Red
+Thalanga,Gold,17599,582663,32717021,50,,Australia,1425.72,Red
+Thalanga,Zinc,11273,158034,11760960,23,,Australia,713.68,Red
+Thalanga,Coal,13495,1510170,11739738,69,,Australia,517.63,Red
+Thunderbox,Copper,47471,801211,31201129,31,,Australia,411.82,Red
+Thunderbox,Copper,26495,851818,13201920,50,,Australia,241.91,Red
+Touquoy,Zinc,45574,355215,8901342,96,,Canada,101.56,Red
+Touquoy,Nickel,41518,1805590,16970129,41,,Canada,226.12,Red
+Tritton,Nickel,5141,1251195,16678895,91,,Australia,1743.83,Red
+Tritton,Nickel,3174,1762535,39726871,13,,Australia,8823.36,Red
+Tritton,Coal,26876,1247487,45133399,30,,Australia,1268.83,Red
+Tritton,Iron,2374,1290517,18318861,50,,Australia,2641.1,Red
+Wiluna,Coal,16481,1719994,2121924,80,,Australia,107.34,Red
+Wiluna,Copper,35876,963037,47704479,60,,Australia,613.13,Red
+Wodgina,Iron,40704,242040,21436753,71,,Australia,161.56,Red
+Wodgina,Aluminum,34666,327642,17856098,74,,Australia,262.27,Red
