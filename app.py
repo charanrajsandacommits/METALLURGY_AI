@@ -8,9 +8,13 @@ import os
 app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
+# --- ENVIRONMENT CONFIGURATION ---
+# This looks for a variable on Render; if not found, it uses your existing key.
+API_KEY = os.getenv('GOOGLE_MAPS_API_KEY', 'AIzaSyA3OiVMUPo1N79inichJ2ajZmX9J3fmoQY')
+
 # Initialize Services
 ai = LCAEngine()
-maps = MapsService('AIzaSyA3OiVMUPo1N79inichJ2ajZmX9J3fmoQY') 
+maps = MapsService(API_KEY) 
 
 # Define Path for Dataset
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -20,7 +24,8 @@ if not os.path.exists(MASTER_DATA_PATH):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    # Pass the API key to the frontend so maps work in the browser
+    return render_template('index.html', api_key=API_KEY)
 
 @app.route('/audit', methods=['POST'])
 def audit():
@@ -29,7 +34,7 @@ def audit():
         if not data: return jsonify({"error": "No data received"}), 400
 
         site_name = data.get('name', '').strip()
-        site_type = data.get('type', 'General').strip() # This is now the Metal Type
+        site_type = data.get('type', 'General').strip() # Metal Type
         prod = float(data.get('production', 1))
         purity = float(data.get('purity', 0))
         energy = float(data.get('energy', 0))
@@ -55,7 +60,7 @@ def audit():
         if lat is None or lng is None:
             lat, lng = 23.3441, 85.3096
 
-        # Dynamic AI Analysis (Passes the site_type)
+        # Dynamic AI Analysis
         res = ai.analyze(site_type, purity, energy, water, prod)
         
         res.update({
@@ -70,4 +75,6 @@ def audit():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False)
+    # Render requires the app to listen on 0.0.0.0 and a dynamic port
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True, use_reloader=False)
