@@ -187,3 +187,60 @@ button:hover { background: #00b8e6; }
     display: block;
     margin-top: 4px;
 }
+
+/* Laptop View (Default) */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 1. Reset for mobile-first feel */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* 2. The Main Container */
+.main-container {
+    display: flex;
+    flex-direction: row; /* Desktop: side-by-side */
+    flex-wrap: wrap;    /* Allows wrapping on small screens */
+    width: 100%;
+}
+
+/* 3. Responsive Breakpoint for Mobile */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Mobile: Stacked vertically */
+    }
+
+    /* Make your Input Form and Map take full width */
+    .sidebar, .map-container {
+        width: 100% !important; 
+        height: auto;
+        min-height: 300px;
+    }
+
+    /* Make buttons bigger for fingers (Tap Targets) */
+    button, .input-field {
+        height: 55px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    /* Add padding so content isn't touching the screen edges */
+    .content-wrapper {
+        padding: 15px;
+    }
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #333; /* Or your theme color */
+}
