@@ -4,6 +4,10 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 21.1458, lng: 79.0882 }, 
         zoom: 5,
+        // This line removes the Pegman symbol and disables 360 view
+        streetViewControl: false, 
+        // Optional: keeps the map clean by removing the Fullscreen toggle
+        fullscreenControl: false,
         styles: [
             { "elementType": "geometry", "stylers": [{ "color": "#1d2c4d" }] },
             { "elementType": "labels.text.fill", "stylers": [{ "color": "#8ec3b9" }] },
