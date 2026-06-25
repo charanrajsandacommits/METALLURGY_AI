@@ -3,3 +3,7 @@ pandas
 matplotlib
 gunicorn
 requests
+scikit-learn
+xgboost
+shap
+numpy
