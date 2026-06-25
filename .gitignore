@@ -1,6 +1,28 @@
+# Environment
+.env
+*.env
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-.env
+.Python
+*.egg-info/
+dist/
+build/
 venv/
+.venv/
+
+# ML model files (retrained at startup — no need to commit)
+models/
+*.pkl
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
