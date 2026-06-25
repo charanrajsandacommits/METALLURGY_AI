@@ -241,7 +241,11 @@ def explain_prediction(model, encoders, scaler,
     # SHAP for this row
     explainer = shap.TreeExplainer(model)
     sv        = explainer.shap_values(x_scaled)   # shape: (n_classes, 1, n_features)
-    sv_pred   = sv[pred_class][0]
+    # sv shape can vary — handle safely
+    if isinstance(sv, list):
+        sv_pred = sv[pred_class][0] if pred_class < len(sv) else sv[0][0]
+    else:
+        sv_pred = sv[0]
 
     top_drivers = sorted(
         zip(FEATURES, sv_pred),
