@@ -116,8 +116,8 @@ The ML model trains automatically at startup from `data/test_cases.csv` — no m
 | Name | Role |
 |---|---|
 | **Charan raj Sanda** | Team Lead — Architecture, LCA engine, ML integration |
-| Team Member 2 | Frontend, data pipeline |
-| Team Member 3 | Data collection, testing, documentation |
+| **Rachha Sandhya** | Frontend, data pipeline |
+| **Radha Abhilasha** | Data collection, testing, documentation |
 
 **Institution:** CMR Technical Campus, Hyderabad | CSE (AI & ML) | 2023–2027
 
